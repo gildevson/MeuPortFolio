@@ -1,28 +1,43 @@
-const defaultTheme = {
-  // Temp fonts
-  fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif"
-  },
-  // Colors for layout
-  colors: {
-    primary1: "#854CE6",
-    background1: "#222A35",
-    button: "#854CE6",
-    background2: "#19212C",
-    text: "#C8CFD8",
-    text1: "#F2F5F7",
-    text2: "#626970",
-    text3: "#575C66",
-    footerBackground: "#00012B"
-  },
-  // Breakpoints for responsive design
-  breakpoints: {
-    sm: 'screen and (max-width: 640px)',
-    md: 'screen and (max-width: 768px)',
-    lg: 'screen and (max-width: 1024px)',
-    xl: 'screen and (max-width: 1280px)'
-  }
+import React from 'react';
+import { Nav, NavLink, NavbarContainer, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent';
+import { FaBars } from 'react-icons/fa';
+import { Bio } from '../../data/constants';
+import { useTheme } from 'styled-components';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const theme = useTheme();
+  return (
+    <Nav>
+      <NavbarContainer>
+        <MobileIcon>
+          <FaBars onClick={() => {
+            setIsOpen(!isOpen);
+          }} />
+        </MobileIcon>
+        <NavItems>
+          <NavLink href="#about">Início</NavLink>
+          <NavLink href='#skills'>Competências</NavLink>
+          <NavLink href='#experience'>Experiência</NavLink>
+          <NavLink href='#projects'>Projetos</NavLink>
+          <NavLink href='#education'>Certificações</NavLink>
+        </NavItems>
+        <ButtonContainer>
+          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+        </ButtonContainer>
+        {isOpen && (
+          <MobileMenu isOpen={isOpen}>
+            <MobileLink href="#about" onClick={() => setIsOpen(!isOpen)}>Início</MobileLink>
+            <MobileLink href='#skills' onClick={() => setIsOpen(!isOpen)}>Competências</MobileLink>
+            <MobileLink href='#experience' onClick={() => setIsOpen(!isOpen)}>Experiência</MobileLink>
+            <MobileLink href='#projects' onClick={() => setIsOpen(!isOpen)}>Projetos</MobileLink>
+            <MobileLink href='#education' onClick={() => setIsOpen(!isOpen)}>Certificações</MobileLink>
+            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          </MobileMenu>
+        )}
+      </NavbarContainer>
+    </Nav>
+  );
 };
 
-export default defaultTheme;
+export default Navbar;

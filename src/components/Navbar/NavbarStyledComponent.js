@@ -206,7 +206,7 @@ export  const MobileLink = styled.a`
 `;
 
 export const MobileNavLogo = styled(LinkR)`
-   width: 80%;
+  width: 80%;
   padding: 0 6px;
   display: flex;
   justify-content: start;
