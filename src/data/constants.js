@@ -80,30 +80,25 @@ export const skills = [
     title: "Others",
     skills: [
       {
-        name: "Eclipse",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
+        "name": "Eclipse",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg"
       },
       {
-        name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+        "name": "VS Code",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519"
       },
       {
-        name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        "name": "GitHub",
+        "image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
       },
       {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+        "name": "Netlify",
+        "image": "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png"
       },
       {
-        name: "Crystal Reports",
-        image:
-          "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.caman.au/wp-content/uploads/2018/01/crystal_reports_hosting.png",
-      },
+        "name": "Crystal Reports",
+        "image": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.caman.au/wp-content/uploads/2018/01/crystal_reports_hosting.png"
+      }
       
       
     ],
@@ -185,7 +180,7 @@ export const education = [
     degree: "Microsoft SQL Server 2022: administrando o banco de dados",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 06 de janeiro de 2024",
@@ -193,7 +188,7 @@ export const education = [
     degree: "WEBPACK: TRABALHANDO COM MÓDULOS",
   },
   {
-    id: 1,
+    id: 3,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 24 de janeiro de 2023",
@@ -201,7 +196,7 @@ export const education = [
     degree: "SQL Server: consultas avançadas com Microsoft SQL Server 2017",
   },
   {
-    id: 2,
+    id: 4,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 10 de janeiro de 2023",
@@ -209,7 +204,7 @@ export const education = [
     degree: "GitHub",
   },
   {
-    id: 2,
+    id: 5,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Dezembro de 2022",
@@ -217,7 +212,7 @@ export const education = [
     degree: "Business Intelligence, SQL Server",
   },
   {
-    id: 2,
+    id: 6,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Julho de 2022",

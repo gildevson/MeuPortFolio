@@ -91,7 +91,6 @@ const Body = styled.div`
     flex-direction: column; 
 `
 
-
 const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
@@ -119,7 +118,6 @@ const Date = styled.div`
     }
 `
 
-
 const Skills = styled.div`
     width: 100%;
     display: flex;
@@ -142,8 +140,6 @@ const Skill = styled.div`
     }
 `
 
-
-
 const ExperienceCard = ({ experience }) => {
     return (
         <Card>
@@ -158,7 +154,6 @@ const ExperienceCard = ({ experience }) => {
             <Description>
                 {experience?.desc &&
                     <Span>{experience?.desc}</Span>
-
                 }
                 {experience?.skills &&
                     <>
@@ -167,7 +162,7 @@ const ExperienceCard = ({ experience }) => {
                             <b>Skills:</b>
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
+                                    <Skill key={index}>• {skill}</Skill>
                                 ))}
                             </ItemWrapper>
                         </Skills>
