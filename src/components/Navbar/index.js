@@ -1,9 +1,9 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
-import { DiCssdeck } from 'react-icons/di';
+import { Nav, NavLink, NavbarContainer, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
+//import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
+//import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
 
 const Navbar = () => {
@@ -12,25 +12,14 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
-          <a style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: '20;',
-            cursor: 'pointer'
-          }}>
-            {/*<DiCssdeck size="3rem" /> <Span>Portfolio</Span>*/}
-          </a>
-        </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
             setIsOpen(!isOpen)
           }} />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">Home</NavLink>
-          <NavLink href='#skills'>Competência</NavLink>
+          <NavLink href="#about">Início</NavLink>
+          <NavLink href='#skills'>Competências</NavLink>
           <NavLink href='#experience'>Experiência</NavLink>
           <NavLink href='#projects'>Projetos</NavLink>
           <NavLink href='#education'>Certificações</NavLink>
@@ -43,10 +32,10 @@ const Navbar = () => {
           <MobileMenu isOpen={isOpen}>
             <MobileLink href="#about" onClick={() => {
               setIsOpen(!isOpen)
-            }}>Home</MobileLink>
+            }}>Início</MobileLink>
             <MobileLink href='#skills' onClick={() => {
               setIsOpen(!isOpen)
-            }}>Competência</MobileLink>
+            }}>Competências</MobileLink>
             <MobileLink href='#experience' onClick={() => {
               setIsOpen(!isOpen)
             }}>Experiência</MobileLink>
@@ -55,8 +44,8 @@ const Navbar = () => {
             }}>Projetos</MobileLink>
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
-            }}>Certifiações</MobileLink>
-            <GitHubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank">Github</GitHubButton>
+            }}>Certificações</MobileLink>
+            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
           </MobileMenu>
         }
       </NavbarContainer>

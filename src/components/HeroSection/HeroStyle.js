@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import _default from "../../themes/default";
-import { yellow } from "@mui/material/colors";
+//import _default from "../../themes/default";
+//import { yellow } from "@mui/material/colors";
 
 export const HeroContainer = styled.div`
   background: black; /*cor do fundo da foto de apresentação*/

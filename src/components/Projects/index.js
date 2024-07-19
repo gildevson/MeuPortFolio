@@ -16,21 +16,21 @@ const Projects = ({openModal,setOpenModal}) => {
         </Desc>
         <ToggleButtonGroup >
           {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            <ToggleButton active value="all" onClick={() => setToggle('all')}>Todos</ToggleButton>
             :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            <ToggleButton value="all" onClick={() => setToggle('all')}>Todos</ToggleButton>
           }
           <Divider />
           {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>Aplicações WEB</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+            <ToggleButton value="web app" onClick={() => setToggle('web app')}>Aplicações WEB</ToggleButton>
           }
           <Divider />
           {toggle === 'Desktop app' ?
-            <ToggleButton active value="Desktop app" onClick={() => setToggle('Desktop app')}>Desktop APP'S</ToggleButton>
+            <ToggleButton active value="Desktop app" onClick={() => setToggle('Desktop app')}>Software Locais</ToggleButton>
             :
-            <ToggleButton value="Desktop app" onClick={() => setToggle('Desktop app')}>Desktop APP'S</ToggleButton>
+            <ToggleButton value="Desktop app" onClick={() => setToggle('Desktop app')}>Software Locais</ToggleButton>
           }
           <Divider />
           

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Bio } from '../../data/constants';
-import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+// Remova os seguintes imports não utilizados
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import { Bio } from '../../data/constants';
+// import EmailIcon from '@mui/icons-material/Email';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -11,7 +12,6 @@ const FooterContainer = styled.div`
   justify-content: center;
   //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
 `;
-
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -48,7 +48,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
@@ -57,22 +57,6 @@ color: ${({ theme }) => theme.text_primary};
   }
   @media (max-width: 768px) {
     font-size: 1rem;
-  }
-`;
-
-const SocialMediaIcons = styled.div`
-  display: flex;
-  margin-top: 1rem;
-`;
-
-const SocialMediaIcon = styled.a`
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -89,17 +73,15 @@ function Footer() {
       <FooterWrapper>
         <Logo></Logo>
         <Nav>
-          <NavLink href="#about">Home</NavLink>
+          <NavLink href="#about">Início</NavLink>
           <NavLink href="#skills">Competências</NavLink>
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#education">Certificações</NavLink>
         </Nav>
-        
         <Copyright>
           &copy; 2024 Gilson Fonseca.
         </Copyright>
-
       </FooterWrapper>
     </FooterContainer>
   );
