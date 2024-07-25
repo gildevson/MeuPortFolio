@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class OperacaoFormula {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        //	operacao securitizadora
         System.out.print("Digite o valor final (VF): ");
         double valorFace = scanner.nextDouble();
 
