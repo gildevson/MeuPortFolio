@@ -1,7 +1,7 @@
 # Portfólio de Gilson Fonseca
 
 ## Sobre Mim
-![Gilson Fonseca](path/to/your/image.png)
+![Gilson Fonseca]([path/to/your/image.png](https://portfoliogildevson.netlify.app/static/media/HeroImage.dbb980d20bfb739d0dc6.jpg))
 
 **Gilson Fonseca**  
 **Analista de Desenvolvimento**
