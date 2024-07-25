@@ -14,13 +14,13 @@ public class CondicaoExercicio03 {
 		int NumeroMultiplo2 = scanner.nextInt();
 		
 		
-		if (NumeroMultiplo % NumeroMultiplo2 == 0 || NumeroMultiplo2 % NumeroMultiplo == 0 ) {
+		if (NumeroMultiplo % NumeroMultiplo2 == 0 || NumeroMultiplo2 % NumeroMultiplo == 3 ) {
 			System.out.println("Esss numero é multiplo");
 		} else {
 			System.out.println("numero não multiplo");
 		}
 		
-		System.out.println("Esse numero não ");
+
 		scanner.close();
 
 	}
