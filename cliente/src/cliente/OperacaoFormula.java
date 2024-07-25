@@ -15,7 +15,7 @@ public class OperacaoFormula {
         System.out.print("Digite a taxa (%): ");
         double taxa = scanner.nextDouble();
 
-        scanner.nextLine(); // Consumir a nova linha deixada por nextDouble()
+        scanner.nextLine(); // Consumir a nova linha deixada por nextDoublex)
 
         System.out.print("Digite a data de vencimento (dd/MM/yyyy): ");
         String dataVencimentoStr = scanner.nextLine();
