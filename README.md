@@ -39,44 +39,7 @@ O backend foi construído com Node.js, proporcionando uma base sólida para a l�
     git clone https://github.com/gildevson/portfolio.git
     ```
 
-2. Navegue até o diretório do projeto:
-    ```bash
-    cd portfolio
-    ```
-
-3. Instale as dependências do frontend:
-    ```bash
-    cd frontend
-    npm install
-    ```
-
-4. Instale as dependências do backend:
-    ```bash
-    cd backend
-    npm install
-    ```
-
-### Executando o Frontend
-1. Navegue até o diretório `frontend`:
-    ```bash
-    cd frontend
-    ```
-
-2. Inicie o servidor de desenvolvimento:
-    ```bash
-    npm start
-    ```
-
-### Executando o Backend
-1. Navegue até o diretório `backend`:
-    ```bash
-    cd backend
-    ```
-
-2. Inicie o servidor:
-    ```bash
-    npm start
-    ```
+2. Executação npm start
 
 ## Contato
 Para mais informações, entre em contato através do [meu email](mailto:gilsonfonseca92@gmail.com) ou visite meu perfil no [GitHub](https://github.com/gildevson).
