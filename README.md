@@ -10,7 +10,7 @@ Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvi
 
 ## Tecnologias Utilizadas
 - **Frontend:** React, Bootstrap
-- **Backend:** Node.js
+- **Backend:** Node.js, Java
 - **API:** Integração com API para diversos serviços
 
 ## Estrutura do Projeto
