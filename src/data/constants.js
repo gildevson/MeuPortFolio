@@ -7,7 +7,7 @@ export const Bio = {
     "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Sempre busco me atualizar e aprimorar minhas habilidades para entregar soluções inovadoras. Explore meu portfólio e sinta-se à vontade para entrar em contato para perguntas. Estou sempre aberto a novas oportunidades e desafios.",
   github: "https://github.com/gildevson",
   resume:
-    "https://drive.google.com/file/d/1O5iq-yY7ddDLkkiFvNjlRtPGltoOPOne/view?usp=drive_link",
+    "https://drive.google.com/file/d/1kcPqLKUSNfD6hgwNiULE_Hw6GllG401Q/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
   whatsapp: "",
   
