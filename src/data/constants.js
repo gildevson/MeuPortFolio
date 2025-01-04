@@ -241,8 +241,7 @@ export const projects = [
     member: [
       {
         name: "Gilson",
-        img: "https://media.licdn.com/dms/image/D4D03AQFH4FyNaXILBA/profile-displayphoto-shrink_200_200/0/1694655047959?e=1726704000&v=beta&t=XHuaqTfD_II9nKsjWvsawcjn89Of37BCrQXoRJN_2D0",
-        linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
         github: "https://github.com/gildevson",
       },
     ],
@@ -262,7 +261,28 @@ export const projects = [
     member: [
       {
         name: "Gilson",
-        img: "https://media.licdn.com/dms/image/D4D03AQFH4FyNaXILBA/profile-displayphoto-shrink_200_200/0/1694655047959?e=1726704000&v=beta&t=XHuaqTfD_II9nKsjWvsawcjn89Of37BCrQXoRJN_2D0",
+        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+        linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+        github: "https://github.com/gildevson",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Layout Bancarios",
+    date: "Dezembro 2024 - Janeiro 2025",
+    description:
+      "Projeto desenvolvido com Node.js no backend e React no frontend, utilizando API RESTful para comunicação eficiente. O sistema permite gerenciar ocorrências bancárias, acessar links de layouts bancários e autenticar usuários com segurança. Com interface responsiva e integração ao banco de dados, é ideal para empresas financeiras que buscam organização e rapidez no acesso a dados bancários.",
+    image:
+      "https://github.com/gildevson/OcorrenciasBancarias/blob/main/src/components/Header/Layouts.png?raw=true",
+    tags: ["NodeJs","JavaScript","Bootstrap", "ReactJs", "CSS", "JSON"],
+    category: "web app",
+    github: "https://github.com/gildevson/OcorrenciasBancarias",
+    webapp: "https://bancosocorrencia.netlify.app/#home",
+    member: [
+      {
+        name: "Gilson",
+        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
         linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
         github: "https://github.com/gildevson",
       },
@@ -270,7 +290,7 @@ export const projects = [
   },
   
   {
-    id: 2,
+    id: 3,
     title: "",
     date: "",
     description:
@@ -298,3 +318,4 @@ export const TimeLineData = [
   { year: 2020, text: "Shared my projects with the world" },
   { year: 2021, text: "Started my own platform" },
 ];
+
