@@ -4,7 +4,7 @@
 ![Gilson Fonseca](https://portfoliogildevson.netlify.app/static/media/HeroImage.dbb980d20bfb739d0dc6.jpg)
 
 **Gilson Fonseca**  
-**Analista de Desenvolvimento**
+**Desenvolvedor**
 
 Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Sempre busco me atualizar e aprimorar minhas habilidades para entregar soluções inovadoras. Explore meu portfólio e sinta-se à vontade para entrar em contato para perguntas. Estou sempre aberto a novas oportunidades e desafios.
 
