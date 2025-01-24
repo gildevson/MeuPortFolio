@@ -7,7 +7,7 @@ export const Bio = {
     "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Sempre busco me atualizar e aprimorar minhas habilidades para entregar soluções inovadoras. Explore meu portfólio e sinta-se à vontade para entrar em contato para perguntas. Estou sempre aberto a novas oportunidades e desafios.",
   github: "https://github.com/gildevson",
   resume:
-    "https://drive.google.com/file/d/1XUKZzGuoUt9Dn9ZxDAIh-DiFpTZsAzsh/view?usp=sharing",
+    "https://drive.google.com/file/d/1B7wAwOtFvES-A8rGnMkPGABNWLDoEeZm/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
   whatsapp: "",
   
@@ -139,7 +139,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://scontent.fbfh8-1.fna.fbcdn.net/v/t39.30808-6/279417653_5372388496162858_994053219107342011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=yerz3IzvIfsQ7kNvgFXVGS6&_nc_zt=23&_nc_ht=scontent.fbfh8-1.fna&_nc_gid=A0CiI3om2RRPoXSzDdOEdS0&oh=00_AYAkoSYQ8vhe5QHcaJ5HKVYuAGT7c7MLbJ0_YWS8A9oJ1g&oe=6778D079",
+    img: "https://scontent.fcwb2-3.fna.fbcdn.net/v/t39.30808-6/279417653_5372388496162858_994053219107342011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vhl_I5WnI2cQ7kNvgGMA2sS&_nc_zt=23&_nc_ht=scontent.fcwb2-3.fna&_nc_gid=AQ670N5y6n1ZkBVITjuUJLF&oh=00_AYAUxJiXcqcvEOP0Xzm6CNyx8NilMzjt80sV8P4XsC7CHw&oe=67998DB9",
     role: "Analista de Suporte - Estágio ",
     company: "Unifatec",
     date: "Janeiro 2022 - Julho 2022",
@@ -163,6 +163,14 @@ export const experiences = [
 export const education = [
   {
     id: 0,
+    img: "https://media.licdn.com/dms/image/v2/D4D0BAQEDKKi5sGbJ2Q/company-logo_200_200/company-logo_200_200/0/1730461937721/pucminas_logo?e=1746057600&v=beta&t=790tp0IMWrbbGDRue5ScVC7Nmez5zAHacgTsX72GNvg",
+    school: "PUC MINAS",
+    date: "Janeiro 2025 - Setembro 2026",
+    desc: "Cursando",
+    degree: "Pós Engenharia Software",
+  },
+  {
+    id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFYyNcUOkusZmXvNoZ0Ouj6iA6TYMzQJw0Q&s",
     school: "CENTRO UNIVERSITÁRIO INTERNACIONAL - UNINTER",
     date: "Agosto 2021 - Julho 2024",
@@ -170,7 +178,7 @@ export const education = [
     degree: "Graduação em Analise e Desenvolvimento de Sistemas",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 10 de fevereiro de 2024",
@@ -178,7 +186,7 @@ export const education = [
     degree: "Microsoft SQL Server 2022: administrando o banco de dados",
   },
   {
-    id: 2,
+    id: 3,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 06 de janeiro de 2024",
@@ -186,7 +194,7 @@ export const education = [
     degree: "WEBPACK: TRABALHANDO COM MÓDULOS",
   },
   {
-    id: 3,
+    id: 4,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 24 de janeiro de 2023",
@@ -194,7 +202,7 @@ export const education = [
     degree: "SQL Server: consultas avançadas com Microsoft SQL Server 2017",
   },
   {
-    id: 4,
+    id: 5,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 10 de janeiro de 2023",
@@ -202,7 +210,7 @@ export const education = [
     degree: "GitHub",
   },
   {
-    id: 5,
+    id: 6,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Dezembro de 2022",
@@ -210,7 +218,7 @@ export const education = [
     degree: "Business Intelligence, SQL Server",
   },
   {
-    id: 6,
+    id: 7,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Julho de 2022",
