@@ -6,8 +6,8 @@ export const Bio = {
   description:
     "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Sempre busco me atualizar e aprimorar minhas habilidades para entregar soluções inovadoras. Explore meu portfólio e sinta-se à vontade para entrar em contato para perguntas. Estou sempre aberto a novas oportunidades e desafios.",
   github: "https://github.com/gildevson",
-  resume:
-    "https://drive.google.com/file/d/1B7wAwOtFvES-A8rGnMkPGABNWLDoEeZm/view?usp=sharing",
+  resume: "../components/Curriculo/Gilson_Fonseca.pdf",
+
   linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
   whatsapp: "",
   
@@ -139,7 +139,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://scontent.fcwb2-3.fna.fbcdn.net/v/t39.30808-6/279417653_5372388496162858_994053219107342011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vhl_I5WnI2cQ7kNvgGMA2sS&_nc_zt=23&_nc_ht=scontent.fcwb2-3.fna&_nc_gid=AQ670N5y6n1ZkBVITjuUJLF&oh=00_AYAUxJiXcqcvEOP0Xzm6CNyx8NilMzjt80sV8P4XsC7CHw&oe=67998DB9",
+    img: "https://raichu-uploads.s3.amazonaws.com/logo_unifatec_VaMNgv.png",
     role: "Analista de Suporte - Estágio ",
     company: "Unifatec",
     date: "Janeiro 2022 - Julho 2022",

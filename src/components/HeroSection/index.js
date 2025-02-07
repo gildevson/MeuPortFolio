@@ -16,7 +16,7 @@ const HeroSection = () => {
                     <HeroLeftContainer id="Left">
                         <Title> {/* Este é um comentário de uma linha no JSX */}<br /> {Bio.name}</Title>
                         <TextLoop>
-                        Analista de Desenvolvimento{/* Este é um comentário de uma linha no JSX */}
+                            Analista de Desenvolvimento{/* Este é um comentário de uma linha no JSX */}
                             <Span>
                                 <Typewriter
                                     options={{
@@ -28,18 +28,22 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Currículo</ResumeButton>
+                        <ResumeButton
+                            href="Curriculo/Gilson_Fonseca.pdf"
+                            download="Gilson_Fonseca.pdf"
+                            target="_blank"
+                        >
+                            Currículo
+                        </ResumeButton>
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
-
                         <Img src={HeroImg} alt="hero-image" />
                     </HeroRightContainer>
                 </HeroInnerContainer>
-
             </HeroContainer>
         </div>
     )
 }
 
-export default HeroSection
+export default HeroSection;
