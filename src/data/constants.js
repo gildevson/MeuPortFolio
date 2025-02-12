@@ -4,7 +4,7 @@ export const Bio = {
     "",
   ],
   description:
-    "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Sempre busco me atualizar e aprimorar minhas habilidades para entregar soluções inovadoras. Explore meu portfólio e sinta-se à vontade para entrar em contato para perguntas. Estou sempre aberto a novas oportunidades e desafios.",
+    "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas e atualmente cursando uma pós-graduação em Engenharia de Software. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Estou sempre em busca de atualização e aprimoramento para oferecer soluções inovadoras.Explore meu portfólio e sinta-se à vontade para entrar em contato caso tenha dúvidas ou interesse em oportunidades. Estou sempre aberto a novos desafios!",
   github: "https://github.com/gildevson",
   resume: "",
 
