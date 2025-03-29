@@ -296,7 +296,27 @@ export const projects = [
       },
     ],
   },
-  
+  {
+    id: 2,
+    title: "Influenciando Gearações",
+    date: "fevereiro 2024 - Março 2025",
+    description:
+      "Desenvolvi um website utilizando React.js com o objetivo de apresentar as ações sociais da Instituição Gerações, que realiza um trabalho fundamental no apoio a crianças e comunidades em situação de vulnerabilidade.O site foi pensado para ser moderno, leve e responsivo, permitindo que qualquer pessoa, em qualquer dispositivo, possa conhecer de forma clara e visual as atividades promovidas pela instituição.",
+    image:
+      "https://github.com/gildevson/OcorrenciasBancarias/blob/main/src/components/Header/Layouts.png?raw=true",
+    tags: ["NodeJs","ReactJs", "CSS"],
+    category: "web app",
+    github: "https://github.com/gildevson/ONG",
+    webapp: "https://influenciando-geracoes.netlify.app",
+    member: [
+      {
+        name: "Gilson",
+        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+        linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+        github: "https://github.com/gildevson",
+      },
+    ],
+  },
   {
     id: 3,
     title: "",
