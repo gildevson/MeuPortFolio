@@ -297,7 +297,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Influenciando Gearações",
     date: "fevereiro 2024 - Março 2025",
     description:
@@ -318,7 +318,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "",
     date: "",
     description:
