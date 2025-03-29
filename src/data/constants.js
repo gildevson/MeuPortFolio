@@ -282,7 +282,7 @@ export const projects = [
     description:
       "O projeto foi desenvolvido com Node.js no backend e React no frontend, utilizando uma API RESTful para comunicação eficiente entre as camadas. O sistema foi pensado para resolver um problema comum em sistemas bancários: a dificuldade e o tempo perdido ao buscar informações em manuais bancários ou arquivos PDF.Esse problema surgiu porque, muitas vezes, as pessoas precisam cadastrar ocorrências bancárias ou buscar detalhes sobre layouts de cobrança, mas acabam gastando muito tempo navegando por documentos extensos e complexos. Para resolver isso, centralizei todas essas informações em uma interface simples e responsiva, facilitando o acesso.Com a integração ao banco de dados, é possível gerenciar ocorrências bancárias, acessar links diretos para layouts bancários e autenticar usuários com segurança. Além disso, o sistema organiza e apresenta os dados de forma clara, garantindo rapidez e eficiência no acesso às informações.Este projeto é ideal para empresas financeiras que buscam otimizar processos, reduzir o tempo de busca por informações e melhorar a organização de dados críticos, oferecendo uma solução prática e moderna.",
     image:
-      "https://github.com/gildevson/OcorrenciasBancarias/blob/main/src/components/Header/Layouts.png?raw=true",
+      "https://raw.githubusercontent.com/gildevson/ONG/refs/heads/main/public/modelo.png",
     tags: ["NodeJs","JavaScript","Bootstrap", "ReactJs", "CSS", "JSON"],
     category: "web app",
     github: "https://github.com/gildevson/OcorrenciasBancarias",
