@@ -303,7 +303,7 @@ export const projects = [
     description:
       "Desenvolvi um website utilizando React.js com o objetivo de apresentar as ações sociais da Instituição Gerações, que realiza um trabalho fundamental no apoio a crianças e comunidades em situação de vulnerabilidade.O site foi pensado para ser moderno, leve e responsivo, permitindo que qualquer pessoa, em qualquer dispositivo, possa conhecer de forma clara e visual as atividades promovidas pela instituição.",
     image:
-      "https://github.com/gildevson/OcorrenciasBancarias/blob/main/src/components/Header/Layouts.png?raw=true",
+      "https://github.com/gildevson/ONG",
     tags: ["NodeJs","ReactJs", "CSS"],
     category: "web app",
     github: "https://github.com/gildevson/ONG",
