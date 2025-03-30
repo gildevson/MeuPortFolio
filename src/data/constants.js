@@ -298,7 +298,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Influenciando Gearações",
+    title: "Influenciando Gerações",
     date: "fevereiro 2024 - Março 2025",
     description:
       "Desenvolvi um website utilizando React.js com o objetivo de apresentar as ações sociais da Instituição Gerações, que realiza um trabalho fundamental no apoio a crianças e comunidades em situação de vulnerabilidade.O site foi pensado para ser moderno, leve e responsivo, permitindo que qualquer pessoa, em qualquer dispositivo, possa conhecer de forma clara e visual as atividades promovidas pela instituição.",
