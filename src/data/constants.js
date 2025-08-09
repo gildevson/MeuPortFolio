@@ -1,3 +1,6 @@
+
+
+
 export const Bio = {
   name: "Gilson Fonseca",
   roles: [
@@ -163,7 +166,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQEDKKi5sGbJ2Q/company-logo_200_200/company-logo_200_200/0/1730461937721/pucminas_logo?e=1746057600&v=beta&t=790tp0IMWrbbGDRue5ScVC7Nmez5zAHacgTsX72GNvg",
+    img: "https://scontent.fbfh9-1.fna.fbcdn.net/v/t39.30808-6/464622542_8982988401765893_53295675588242113_n.png?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=ks1OW-WFyToQ7kNvwGKQx8c&_nc_oc=AdlNuKEXXq08z2smQ4Kv4Yi2OX27kySB8HBFWYlGzpzxX5yJjXdNTm9Q1uJiszHVfD2B4T9sHXA4P-JcF_f4vukF&_nc_zt=23&_nc_ht=scontent.fbfh9-1.fna&_nc_gid=P5cnFRHFA8E1gocy3Cj4gw&oh=00_AfUiJikMuekmhbt39nSUUnFrDVcUJ42GnF2TlhXTCXakxg&oe=689D9E0D",
     school: "PUC MINAS",
     date: "Janeiro 2025 - Setembro 2026",
     desc: "Cursando",
@@ -179,6 +182,14 @@ export const education = [
   },
   {
     id: 2,
+    img: "https://yt3.googleusercontent.com/m2DDh77RZbGfQrGpDKNIaFybLAy9jP8foYPXhlQMNxieFzEEckffauYRlWhFLL52j5TyTs8RcA=s160-c-k-c0x00ffffff-no-rj",
+    school: "Rocketseat",
+    date: "Julho 2025 - Agosto 2025",
+    desc: "Durante o minicurso, desenvolvi uma API completa para gerenciamento de tarefas (To-Do List) utilizando Java e Spring Boot. Aprendi a criar rotas HTTP, validar parâmetros, realizar integração com banco de dados e implementar autenticação segura com JWT utilizando Spring Security. Esse projeto me proporcionou uma base prática sólida para o desenvolvimento de APIs com Spring Boot, permitindo criar aplicações do zero com boas práticas de programação e segurança.",
+    degree: "Java Srping ",
+  },
+  {
+    id: 3,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 10 de fevereiro de 2024",
@@ -186,7 +197,7 @@ export const education = [
     degree: "Microsoft SQL Server 2022: administrando o banco de dados",
   },
   {
-    id: 3,
+    id: 4,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 06 de janeiro de 2024",
@@ -194,7 +205,7 @@ export const education = [
     degree: "WEBPACK: TRABALHANDO COM MÓDULOS",
   },
   {
-    id: 4,
+    id: 5,
     img: "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
     school: "Alura",
     date: "Finalizado em 24 de janeiro de 2023",
@@ -202,7 +213,7 @@ export const education = [
     degree: "SQL Server: consultas avançadas com Microsoft SQL Server 2017",
   },
   {
-    id: 5,
+    id: 6,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 10 de janeiro de 2023",
@@ -210,7 +221,7 @@ export const education = [
     degree: "GitHub",
   },
   {
-    id: 6,
+    id: 7,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Dezembro de 2022",
@@ -218,7 +229,7 @@ export const education = [
     degree: "Business Intelligence, SQL Server",
   },
   {
-    id: 7,
+    id: 8,
     img: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     school: "Udemy",
     date: "Finalizado em 06 de Julho de 2022",
