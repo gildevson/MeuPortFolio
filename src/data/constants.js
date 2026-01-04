@@ -13,7 +13,7 @@ export const Bio = {
 
   linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
   whatsapp: "",
-  
+
 };
 
 export const skills = [
@@ -25,7 +25,7 @@ export const skills = [
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
-      
+
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -74,7 +74,7 @@ export const skills = [
         image:
           "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000",
       },
-      
+
     ],
   },
   {
@@ -100,8 +100,8 @@ export const skills = [
         "name": "Crystal Reports",
         "image": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.caman.au/wp-content/uploads/2018/01/crystal_reports_hosting.png"
       }
-      
-      
+
+
     ],
   },
 ];
@@ -159,14 +159,14 @@ export const experiences = [
     company: "bellinati perez",
     date: "June 2022 - July 2023",
     desc: "Na Bellinati Perez, trabalhei com a cobrança de títulos da carteira do Itaú, contactando clientes para negociação e regularização de pendências financeiras. Minha função envolvia análise de contas, elaboração de estratégias de cobrança e manutenção de registros detalhados das interações com os clientes. Fui responsável por garantir a recuperação de créditos de forma eficiente e profissional, sempre focado em manter um bom relacionamento com os clientes e atingir as metas estabelecidas.",
-    
+
   },
 ];
 
 export const education = [
   {
     id: 0,
-    img: "../images/pucminas.png",
+    img: "https://github.com/gildevson/MeuPortFolio/blob/main/src/images/pucminas.jpg?raw=true",
     school: "PUC MINAS",
     date: "Janeiro 2025 - Setembro 2026",
     desc: "Cursando",
@@ -273,7 +273,7 @@ export const projects = [
       "Projeto JP é uma publicação educativa dedicada a fornecer informações relevantes e educativas aos leitores, focando na história do C.E. Papa João Paulo I. Seu principal propósito é promover aprendizado e conhecimento em diversas áreas, abordando temas de interesse educacional e cultural. O blog busca oferecer conteúdo que estimule o aprendizado e enriqueça a compreensão dos leitores, destacando a história e a importância do C.E. Papa João Paulo I como parte integrante desse processo educacional.",
     image:
       "https://github.com/gildevson/SiteJornal/blob/main/img/ImagemScholl.png?raw=true",
-    tags: ["JavaScript","Bootstrap", "CSS", "HTML"],
+    tags: ["JavaScript", "Bootstrap", "CSS", "HTML"],
     category: "web app",
     github: "https://github.com/gildevson/SiteJornal",
     webapp: "https://willowy-tartufo-743641.netlify.app/",
@@ -294,7 +294,7 @@ export const projects = [
       "O projeto foi desenvolvido com Node.js no backend e React no frontend, utilizando uma API RESTful para comunicação eficiente entre as camadas. O sistema foi pensado para resolver um problema comum em sistemas bancários: a dificuldade e o tempo perdido ao buscar informações em manuais bancários ou arquivos PDF.Esse problema surgiu porque, muitas vezes, as pessoas precisam cadastrar ocorrências bancárias ou buscar detalhes sobre layouts de cobrança, mas acabam gastando muito tempo navegando por documentos extensos e complexos. Para resolver isso, centralizei todas essas informações em uma interface simples e responsiva, facilitando o acesso.Com a integração ao banco de dados, é possível gerenciar ocorrências bancárias, acessar links diretos para layouts bancários e autenticar usuários com segurança. Além disso, o sistema organiza e apresenta os dados de forma clara, garantindo rapidez e eficiência no acesso às informações.Este projeto é ideal para empresas financeiras que buscam otimizar processos, reduzir o tempo de busca por informações e melhorar a organização de dados críticos, oferecendo uma solução prática e moderna.",
     image:
       "https://raw.githubusercontent.com/gildevson/OcorrenciasBancarias/refs/heads/main/src/components/Header/Layouts.png",
-    tags: ["NodeJs","JavaScript","Bootstrap", "ReactJs", "CSS", "JSON"],
+    tags: ["NodeJs", "JavaScript", "Bootstrap", "ReactJs", "CSS", "JSON"],
     category: "web app",
     github: "https://github.com/gildevson/OcorrenciasBancarias",
     webapp: "https://bancosocorrencia.netlify.app/#home",
@@ -312,10 +312,10 @@ export const projects = [
     title: "Influenciando Gerações",
     date: "fevereiro 2024 - Março 2025",
     description:
-      "Desenvolvi um website utilizando React.js com o objetivo de apresentar as ações sociais da Instituição Gerações, que realiza um trabalho fundamental no apoio a crianças e comunidades em situação de vulnerabilidade.O site foi pensado para ser moderno, leve e responsivo, permitindo que qualquer pessoa, em qualquer dispositivo, possa conhecer de forma clara e visual as atividades promovidas pela instituição.",
+      "Este projeto foi desenvolvido ao longo de um período de evolução contínua, com o objetivo de consolidar conhecimentos práticos em desenvolvimento full stack, arquitetura de sistemas e integração com banco de dados relacional em um cenário realista de negócio.A solução reúne dois grandes módulos: um Sistema de Ocorrências Bancárias e um Portal de Notícias, simulando um ambiente corporativo onde informações financeiras, operacionais e informativas coexistem de forma integrada.Durante o desenvolvimento, o foco foi criar um sistema organizado, escalável e performático, seguindo boas práticas tanto no backend quanto no frontend.",
     image:
       "https://raw.githubusercontent.com/gildevson/ONG/refs/heads/main/public/modelo.png",
-    tags: ["NodeJs","ReactJs", "CSS"],
+    tags: ["NodeJs", "ReactJs", "CSS"],
     category: "web app",
     github: "https://github.com/gildevson/ONG",
     webapp: "https://influenciando-geracoes.netlify.app",
@@ -330,25 +330,27 @@ export const projects = [
   },
   {
     id: 4,
-    title: "",
-    date: "",
+    title: "Banco Ocorrências",
+    date: "Janeiro 2026",
     description:
-      "",
+      "Sistema desenvolvido com foco na centralização, padronização e consulta de ocorrências bancárias. O projeto foi construído utilizando Angular no frontend e ASP.NET Core com C# no backend, integrados a um banco de dados PostgreSQL. A aplicação permite o cadastro, edição e validação de ocorrências e seus respectivos motivos, organizados por instituição bancária, simulando um cenário real de uso em ambientes financeiros e operacionais. Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura, separação de responsabilidades, autenticação segura via JWT e acesso performático ao banco de dados por meio de micro-ORM, resultando em uma solução escalável, organizada e preparada para evolução contínua.",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolRZpzWw5Y5bj02B-B5cS0SxdD73W-Uage3E80SZAXpRseEXOI594e30Y5u1a2U0Vidw&usqp=CAU",
-    tags: [""],
-    category: "",
-    github: "",
-    webapp: "",
+      "https://github.com/gildevson/BancoOcorrenciasAngular/blob/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png?raw=true",
+    tags: ["Angular", "TypeScript", "C#", ".NET", "PostgreSQL"],
+    category: "web app",
+    github: "https://github.com/gildevson",
+    webapp: "https://bancosocorrencia.com",
     member: [
       {
-        name: "",
-        linkedin: "",
-        github: "",
+        name: "Gilson Fonseca",
+        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+        linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+        github: "https://github.com/gildevson",
       },
     ],
   },
-   {
+
+  {
     id: 5,
     title: "",
     date: "",
