@@ -166,7 +166,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://scontent.fbfh9-1.fna.fbcdn.net/v/t39.30808-6/464622542_8982988401765893_53295675588242113_n.png?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=ks1OW-WFyToQ7kNvwGKQx8c&_nc_oc=AdlNuKEXXq08z2smQ4Kv4Yi2OX27kySB8HBFWYlGzpzxX5yJjXdNTm9Q1uJiszHVfD2B4T9sHXA4P-JcF_f4vukF&_nc_zt=23&_nc_ht=scontent.fbfh9-1.fna&_nc_gid=P5cnFRHFA8E1gocy3Cj4gw&oh=00_AfUiJikMuekmhbt39nSUUnFrDVcUJ42GnF2TlhXTCXakxg&oe=689D9E0D",
+    img: "../images/pucminas.png",
     school: "PUC MINAS",
     date: "Janeiro 2025 - Setembro 2026",
     desc: "Cursando",
@@ -330,6 +330,26 @@ export const projects = [
   },
   {
     id: 4,
+    title: "",
+    date: "",
+    description:
+      "",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolRZpzWw5Y5bj02B-B5cS0SxdD73W-Uage3E80SZAXpRseEXOI594e30Y5u1a2U0Vidw&usqp=CAU",
+    tags: [""],
+    category: "",
+    github: "",
+    webapp: "",
+    member: [
+      {
+        name: "",
+        linkedin: "",
+        github: "",
+      },
+    ],
+  },
+   {
+    id: 5,
     title: "",
     date: "",
     description:
