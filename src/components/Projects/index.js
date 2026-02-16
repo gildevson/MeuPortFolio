@@ -9,6 +9,11 @@ const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState('all');
   const { language } = useLanguage();
   const t = translations[language].projects;
+  const tData = translations[language].projectsData || [];
+  const translatedProjects = projects.map((project, index) => ({
+    ...project,
+    ...(tData[index] || {})
+  }));
   
   return (
     <Container id="projects">
@@ -38,17 +43,17 @@ const Projects = ({ openModal, setOpenModal }) => {
           <Divider />
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects.map((project) => (
+          {toggle === 'all' && translatedProjects.map((project) => (
             <ProjectCard
-              key={project.id} // Adicione a propriedade key aqui
+              key={project.id}
               project={project}
               openModal={openModal}
               setOpenModal={setOpenModal}
             />
           ))}
-          {projects.filter((item) => item.category === toggle).map((project) => (
+          {translatedProjects.filter((item) => item.category === toggle).map((project) => (
             <ProjectCard
-              key={project.id} // Adicione a propriedade key aqui também
+              key={project.id}
               project={project}
               openModal={openModal}
               setOpenModal={setOpenModal}

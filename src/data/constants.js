@@ -350,29 +350,31 @@ export const projects = [
   ],
 },
   {
-    id: 5,
-      title: "Finanblue Cursos Frontend",
-      date: "Janeiro 2026",
-      description:
-        "Sistema de treinamentos desenvolvido para a Finanblue, com funcionalidades de login, gerenciamento de aulas, provas e treinamentos. O sistema foi construído com React no frontend, proporcionando uma interface moderna e intuitiva para os usuários.",
-        images: [
-          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800"
-        ],
-      tags: ["React", "JavaScript", "CSS", "HTML"],
-      category: "web app",
-      github: "https://github.com/gildevson/finanblue-cursos-frontend",
-      webapp: "https://finanblue-cursos.netlify.app/",
-      member: [
-        {
-          name: "Gilson Fonseca",
-          img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
-          linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
-          github: "https://github.com/gildevson",
-        },
-      ],
-  },
+  id: 5,
+  title: "Portal de Treinamentos Finanblue",
+  date: "Janeiro 2026",
+  description:
+    "Sistema de treinamentos desenvolvido para a Finanblue com o objetivo de centralizar o conhecimento sobre os produtos e sistemas da empresa em um único ambiente organizado e acessível. A plataforma foi criada para auxiliar na integração de novos colaboradores, permitindo que entendam rapidamente quem somos, o que fazemos, como funcionam nossos sistemas e como é a nossa gestão. O sistema conta com funcionalidades de login, gerenciamento de aulas, provas e trilhas de treinamento, permitindo que cada assunto específico fique estruturado em seu próprio módulo. A aplicação foi construída com Angular no frontend, TypeScript no backend e PostgreSQL como banco de dados, oferecendo uma interface moderna, intuitiva e preparada para expansão conforme novas demandas surgirem.",
+  images: [
+    "/images/treinamentos/GerenciadorDeProvas.png",
+    "/images/treinamentos/GerenciadorDeTreinamentos.png",
+    "/images/treinamentos/ListaDeAulas.png",
+    "/images/treinamentos/SistemaDeTreinamentos.png",
+    "/images/treinamentos/CelularFinanblue.png"
+  ],
+  tags: ["Angular", "TypeScript", "PostgreSQL", "HTML", "CSS"],
+  category: "web app",
+  github: "",
+  webapp: "",
+  member: [
+    {
+      name: "Gilson Fonseca",
+      img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+      linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+      github: "https://github.com/gildevson",
+    },
+  ],
+},
    {
     id: 6,
     title: "",

@@ -85,6 +85,7 @@ const TimelineSection = styled.div`
 const Education = () => {
     const { language } = useLanguage();
     const t = translations[language].education;
+    const tData = translations[language].educationData || [];
     
     return (
         <Container id="education">
@@ -95,17 +96,20 @@ const Education = () => {
                 </Desc>
                 <TimelineSection>
                     <Timeline>
-                        {education.map((education,index) => (
-                            <TimelineItem >
+                        {education.map((edu,index) => {
+                            const mergedEdu = { ...edu, ...(tData[index] || {}) };
+                            return (
+                            <TimelineItem key={mergedEdu.id || index}>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <EducationCard education={education}/>
+                                    <EducationCard education={mergedEdu}/>
                                 </TimelineContent>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
                                     {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                             </TimelineItem>
-                        ))}
+                            );
+                        })}
                     </Timeline>
 
                 </TimelineSection>

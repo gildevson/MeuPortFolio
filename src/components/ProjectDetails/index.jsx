@@ -393,10 +393,12 @@ const Index = ({ openModal, setOpenModal }) => {
                             </Members>
                         </>
                     )}
-                    <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>{t.viewCode}</Button>
-                        <Button href={project?.webapp} target='new'>{t.viewProject}</Button>
-                    </ButtonGroup>
+                    {(project?.github || project?.webapp) && (
+                        <ButtonGroup>
+                            {project?.github && <Button dull href={project.github} target='new'>{t.viewCode}</Button>}
+                            {project?.webapp && <Button href={project.webapp} target='new'>{t.viewProject}</Button>}
+                        </ButtonGroup>
+                    )}
                 </Wrapper>
             </Container>
 
