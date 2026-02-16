@@ -4,8 +4,13 @@ import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, Hero
 import HeroImg from '../../images/HeroImage.jpg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translations } from '../../data/translations';
 
 const HeroSection = () => {
+    const { language } = useLanguage();
+    const t = translations[language].hero;
+    
     return (
         <div id="about">
             <HeroContainer>
@@ -16,7 +21,7 @@ const HeroSection = () => {
                     <HeroLeftContainer id="Left">
                         <Title> {/* Este é um comentário de uma linha no JSX */}<br /> {Bio.name}</Title>
                         <TextLoop>
-                            Analista de Desenvolvimento{/* Este é um comentário de uma linha no JSX */}
+                            {t.title}{/* Este é um comentário de uma linha no JSX */}
                             <Span>
                                 <Typewriter
                                     options={{
@@ -27,13 +32,13 @@ const HeroSection = () => {
                                 />
                             </Span>
                         </TextLoop>
-                        <SubTitle>{Bio.description}</SubTitle>
+                        <SubTitle>{translations[language].bio.description}</SubTitle>
                         <ResumeButton
                             href="Curriculo/Gilson_Fonseca.pdf"
                             download="Gilson_Fonseca.pdf"
                             target="_blank"
                         >
-                            Currículo
+                            {t.resume}
                         </ResumeButton>
                     </HeroLeftContainer>
 

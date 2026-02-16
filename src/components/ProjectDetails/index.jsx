@@ -1,7 +1,9 @@
-import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
+import { CloseRounded, GitHub, LinkedIn, ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 import { Modal } from '@mui/material';
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translations } from '../../data/translations';
 
 const Container = styled.div`
 width: 100%;
@@ -63,14 +65,6 @@ const Desc = styled.div`
         font-size: 14px;
         margin: 6px 6px;
     }
-`;
-
-const Image = styled.img`
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
 const Label = styled.div`
@@ -182,8 +176,147 @@ const Button = styled.a`
 `;
 
 
-const index = ({ openModal, setOpenModal }) => {
+const CarouselContainer = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+`;
+
+const ImageWrapper = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const CarouselImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  cursor: pointer;
+`;
+
+const ArrowButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  ${({ direction }) => direction === 'left' ? 'left: 10px;' : 'right: 10px;'}
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 32px;
+    height: 32px;
+    ${({ direction }) => direction === 'left' ? 'left: 5px;' : 'right: 5px;'}
+  }
+`;
+
+const CarouselIndicators = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+`;
+
+const Indicator = styled.button`
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: ${({ active, theme }) => active ? theme.primary : theme.bgLight};
+  cursor: pointer;
+  transition: background 0.3s;
+`;
+
+const Index = ({ openModal, setOpenModal }) => {
+    const { language } = useLanguage();
+    const t = translations[language].projects;
     const project = openModal?.project;
+    const [carouselIdx, setCarouselIdx] = useState(0);
+    const images = project?.images || (project?.image ? [project.image] : []);
+
+    // Swipe/drag state
+    const [startX, setStartX] = useState(null);
+    const [isDragging, setIsDragging] = useState(false);
+
+    const handleIndicator = (idx) => {
+        setCarouselIdx(idx);
+    };
+    
+    const handlePrevImage = (e) => {
+        e.stopPropagation();
+        setCarouselIdx((prev) => prev === 0 ? images.length - 1 : prev - 1);
+    };
+    
+    const handleNextImage = (e) => {
+        e.stopPropagation();
+        setCarouselIdx((prev) => (prev + 1) % images.length);
+    };
+    
+    const handleImageClick = () => {
+        setCarouselIdx((prev) => (prev + 1) % images.length);
+    };
+
+    // Touch events
+    const handleTouchStart = (e) => {
+        setStartX(e.touches[0].clientX);
+        setIsDragging(true);
+    };
+    const handleTouchEnd = (e) => {
+        if (!isDragging) return;
+        const endX = e.changedTouches[0].clientX;
+        if (startX !== null) {
+            if (endX - startX > 50) {
+                // Swipe right
+                setCarouselIdx((prev) => prev === 0 ? images.length - 1 : prev - 1);
+            } else if (startX - endX > 50) {
+                // Swipe left
+                setCarouselIdx((prev) => (prev + 1) % images.length);
+            }
+        }
+        setIsDragging(false);
+        setStartX(null);
+    };
+
+    // Mouse events
+    const handleMouseDown = (e) => {
+        setStartX(e.clientX);
+        setIsDragging(true);
+    };
+    const handleMouseUp = (e) => {
+        if (!isDragging) return;
+        const endX = e.clientX;
+        if (startX !== null) {
+            if (endX - startX > 50) {
+                setCarouselIdx((prev) => prev === 0 ? images.length - 1 : prev - 1);
+            } else if (startX - endX > 50) {
+                setCarouselIdx((prev) => (prev + 1) % images.length);
+            }
+        }
+        setIsDragging(false);
+        setStartX(null);
+    };
+
     return (
         <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
             <Container>
@@ -197,7 +330,42 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    {images.length > 0 && (
+                        <CarouselContainer>
+                            <ImageWrapper>
+                                {images.length > 1 && (
+                                    <>
+                                        <ArrowButton direction="left" onClick={handlePrevImage}>
+                                            <ArrowBackIosNew sx={{ fontSize: 20 }} />
+                                        </ArrowButton>
+                                        <ArrowButton direction="right" onClick={handleNextImage}>
+                                            <ArrowForwardIos sx={{ fontSize: 20 }} />
+                                        </ArrowButton>
+                                    </>
+                                )}
+                                <CarouselImage
+                                    src={images[carouselIdx]}
+                                    onClick={handleImageClick}
+                                    onTouchStart={handleTouchStart}
+                                    onTouchEnd={handleTouchEnd}
+                                    onMouseDown={handleMouseDown}
+                                    onMouseUp={handleMouseUp}
+                                />
+                            </ImageWrapper>
+                            {images.length > 1 && (
+                                <CarouselIndicators>
+                                    {images.map((_, idx) => (
+                                        <Indicator
+                                            key={idx}
+                                            active={carouselIdx === idx}
+                                            theme={project.theme}
+                                            onClick={() => handleIndicator(idx)}
+                                        />
+                                    ))}
+                                </CarouselIndicators>
+                            )}
+                        </CarouselContainer>
+                    )}
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -208,7 +376,7 @@ const index = ({ openModal, setOpenModal }) => {
                     <Desc>{project?.description}</Desc>
                     {project.member && (
                         <>
-                            <Label>Members</Label>
+                            <Label>{t.members}</Label>
                             <Members>
                                 {project?.member.map((member) => (
                                     <Member>
@@ -226,8 +394,8 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>Ver codigo</Button>
-                        <Button href={project?.webapp} target='new'>Ver projeto</Button>
+                        <Button dull href={project?.github} target='new'>{t.viewCode}</Button>
+                        <Button href={project?.webapp} target='new'>{t.viewProject}</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
@@ -236,4 +404,4 @@ const index = ({ openModal, setOpenModal }) => {
     )
 }
 
-export default index
+export default Index

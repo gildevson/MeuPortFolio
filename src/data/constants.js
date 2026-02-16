@@ -329,46 +329,49 @@ export const projects = [
     ],
   },
   {
-    id: 4,
-    title: "Banco Ocorrências",
-    date: "Janeiro 2026",
-    description:
-      "Sistema desenvolvido com foco na centralização, padronização e consulta de ocorrências bancárias. O projeto foi construído utilizando Angular no frontend e ASP.NET Core com C# no backend, integrados a um banco de dados PostgreSQL. A aplicação permite o cadastro, edição e validação de ocorrências e seus respectivos motivos, organizados por instituição bancária, simulando um cenário real de uso em ambientes financeiros e operacionais. Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura, separação de responsabilidades, autenticação segura via JWT e acesso performático ao banco de dados por meio de micro-ORM, resultando em uma solução escalável, organizada e preparada para evolução contínua.",
-    image:
-      "https://github.com/gildevson/BancoOcorrenciasAngular/blob/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png?raw=true",
-    tags: ["Angular", "TypeScript", "C#", ".NET", "PostgreSQL"],
-    category: "web app",
-    github: "https://github.com/gildevson",
-    webapp: "https://bancosocorrencia.com",
-    member: [
-      {
-        name: "Gilson Fonseca",
-        img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
-        linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
-        github: "https://github.com/gildevson",
-      },
-    ],
-  },
-
+  id: 4,
+  title: "Banco Ocorrências",
+  date: "Janeiro 2026",
+  description:
+    "Sistema desenvolvido com foco na centralização, padronização e consulta de ocorrências bancárias. O portal foi criado para auxiliar usuários na identificação do significado das ocorrências, além de centralizar layouts bancários, ordens e informações operacionais em um único ambiente. O projeto foi construído utilizando Angular no frontend e ASP.NET Core com C# no backend, integrados a um banco de dados PostgreSQL. A aplicação permite o cadastro, edição e validação de ocorrências e seus respectivos motivos, organizados por instituição bancária, simulando um cenário real de uso em ambientes financeiros e operacionais. Atualmente, mais de 15 pessoas já utilizam o portal para auxiliar o setor de suporte da empresa onde atuo, tornando processos mais rápidos, organizados e confiáveis. Os validadores continuam sendo alimentados e aprimorados continuamente conforme novas necessidades surgem, e o portal também conta com uma área de notícias para compartilhamento de informações relevantes. Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura, separação de responsabilidades, autenticação segura via JWT e acesso performático ao banco de dados por meio de micro-ORM, resultando em uma solução escalável, organizada e preparada para evolução contínua.",
+  image:
+    "https://github.com/gildevson/BancoOcorrenciasAngular/blob/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png?raw=true",
+  tags: ["Angular", "TypeScript", "C#", ".NET", "PostgreSQL"],
+  category: "web app",
+  github: "https://github.com/gildevson",
+  webapp: "https://bancosocorrencia.com",
+  member: [
+    {
+      name: "Gilson Fonseca",
+      img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+      linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+      github: "https://github.com/gildevson",
+    },
+  ],
+},
   {
     id: 5,
-    title: "",
-    date: "",
-    description:
-      "",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolRZpzWw5Y5bj02B-B5cS0SxdD73W-Uage3E80SZAXpRseEXOI594e30Y5u1a2U0Vidw&usqp=CAU",
-    tags: [""],
-    category: "",
-    github: "",
-    webapp: "",
-    member: [
-      {
-        name: "",
-        linkedin: "",
-        github: "",
-      },
-    ],
+      title: "Finanblue Cursos Frontend",
+      date: "Janeiro 2026",
+      description:
+        "Sistema de treinamentos desenvolvido para a Finanblue, com funcionalidades de login, gerenciamento de aulas, provas e treinamentos. O sistema foi construído com React no frontend, proporcionando uma interface moderna e intuitiva para os usuários.",
+        images: [
+          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+          "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800"
+        ],
+      tags: ["React", "JavaScript", "CSS", "HTML"],
+      category: "web app",
+      github: "https://github.com/gildevson/finanblue-cursos-frontend",
+      webapp: "https://finanblue-cursos.netlify.app/",
+      member: [
+        {
+          name: "Gilson Fonseca",
+          img: "https://avatars.githubusercontent.com/u/123280951?s=400&u=59a8e906e0d11b2c13276220c6cb24864bf72678&v=4",
+          linkedin: "https://www.linkedin.com/in/gilson-fonseca-78b6b4138/",
+          github: "https://github.com/gildevson",
+        },
+      ],
   },
    {
     id: 6,

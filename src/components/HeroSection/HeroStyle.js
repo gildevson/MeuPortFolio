@@ -7,12 +7,12 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 0px 30px 80px 30px;
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    padding: 0px 16px 66px 16px;
   }
-  @media (max-width: 640) {
-    padding: 32px 16px;
+  @media (max-width: 640px) {
+    padding: 0px 16px 32px 16px;
   }
   z-index: 1;
 
@@ -50,9 +50,15 @@ export const HeroInnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
+  padding-top: 20px;
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding-top: 15px;
+  }
+  
+  @media (max-width: 640px) {
+    padding-top: 10px;
   }
 `;
 export const HeroLeftContainer = styled.div`
@@ -60,7 +66,7 @@ export const HeroLeftContainer = styled.div`
   order: 1;
   @media (max-width: 960px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +74,7 @@ export const HeroLeftContainer = styled.div`
 
   @media (max-width: 640px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,11 +91,11 @@ export const HeroRightContainer = styled.div`
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;
 

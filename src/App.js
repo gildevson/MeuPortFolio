@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { useState } from "react";
-import { darkTheme, lightTheme } from './utils/Themes';
+import { darkTheme } from './utils/Themes';
 import Navbar from "./components/Navbar";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -13,6 +13,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import { LanguageProvider } from './contexts/LanguageContext';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -26,34 +27,13 @@ const Wrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 
-const ToggleButton = styled.button`
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: ${({ theme }) => theme.bg};
-  color: ${({ theme }) => theme.text};
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-`;
-
-function App() {
-  const [darkMode, setDarkMode] = useState(true);
+const AppContent = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal);
-
-  const toggleTheme = () => {
-    setDarkMode(prevMode => !prevMode);
-  };
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <Router>
         <Navbar />
-        <ToggleButton onClick={toggleTheme}>
-          {darkMode ? "Light Mode" : "Dark Mode"}
-        </ToggleButton>
         <Body>
           <HeroSection />
           <Wrapper>
@@ -72,6 +52,14 @@ function App() {
         </Body>
       </Router>
     </ThemeProvider>
+  );
+};
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

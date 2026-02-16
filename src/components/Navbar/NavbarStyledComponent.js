@@ -102,6 +102,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 12px;
   padding: 0 6px;
   @media screen and (max-width: 768px) {
     display: none;
@@ -123,6 +124,33 @@ export const MobileIcon = styled.div`
   }
 `
 
+export const MobileLanguageContainer = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+  }
+`
+
+export const MobileMenuBackdrop = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+`
+
 export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -133,12 +161,13 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.card_light};
+    backdrop-filter: blur(10px);
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+    opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
     z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
 
 `
@@ -192,12 +221,16 @@ export const MobileMenuButton = styled.a`
 
 export  const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  padding: 8px 0;
+  
   :hover {
     color: ${({ theme }) => theme.primary};
+    transform: translateX(5px);
   }
 
   &.active {

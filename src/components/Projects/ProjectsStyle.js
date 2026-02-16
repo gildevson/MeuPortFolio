@@ -9,7 +9,12 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
+    padding-top: 60px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
 `;
 
 export const Wrapper = styled.div`

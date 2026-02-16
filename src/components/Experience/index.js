@@ -8,6 +8,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translations } from '../../data/translations';
 
 const Container = styled.div`
   display: flex;
@@ -16,9 +18,12 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 40px 0px 80px 0px;
+  padding: 80px 0px 80px 0px;
   @media (max-width: 960px) {
-    padding: 0px;
+    padding: 40px 0px 40px 0px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 0px 40px 0px;
   }
 `;
 
@@ -72,12 +77,16 @@ const TimelineSection = styled.div`
 `;
 
 const Experience = () => {
+  const { language } = useLanguage();
+  const t = translations[language].experience;
+  const tData = translations[language].experiencesData;
+  
   return (
     <Container id="experience">
       <Wrapper>
-        <Title>Experiência</Title>
+        <Title>{t.title}</Title>
         <Desc>
-          Ao longo da minha trajetoria, tive a oportunidade de trabalhar em algumas empresas, adquirindo uma vasta experiência e desenvolvendo habilidades essenciais para o meu crescimento profissional.
+          {t.description}
         </Desc>
         <TimelineSection>
           <Timeline>
@@ -88,7 +97,10 @@ const Experience = () => {
                   {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                  <ExperienceCard key={experience.id} experience={experience} />
+                  <ExperienceCard key={experience.id} experience={{
+                    ...experience,
+                    ...(tData[index] || {})
+                  }} />
                 </TimelineContent>
               </TimelineItem>
             ))}

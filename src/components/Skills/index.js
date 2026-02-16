@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { skills } from '../../data/constants'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { translations } from '../../data/translations'
 
 const Container = styled.div`
   display: flex;
@@ -9,6 +11,11 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
+  padding-top: 40px;
+  
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
 `
 
 const Wrapper = styled.div`
@@ -117,16 +124,19 @@ const SkillImage = styled.img`
 `
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const t = translations[language].skills;
+  
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Competências</Title>
-        <Desc>Nos últimos tempos, venho estudando e trabalhando com algumas tecnologias para aprimorar minhas habilidades e expandir meu conhecimento na área de desenvolvimento de software. Algumas das tecnologias que tenho focado incluem:
+        <Title>{t.title}</Title>
+        <Desc>{t.description}
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill key={skill.title}>
-              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillTitle>{t[skill.title.toLowerCase()] || skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
                   <SkillItem key={item.name}>

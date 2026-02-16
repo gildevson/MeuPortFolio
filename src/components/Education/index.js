@@ -9,6 +9,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education, experiences } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translations } from '../../data/translations';
 
 const Container = styled.div`
     display: flex;
@@ -17,9 +19,12 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 0px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 40px 0px 40px 0px;
+    }
+    @media (max-width: 768px) {
+        padding: 20px 0px 40px 0px;
     }
 `;
 
@@ -77,13 +82,16 @@ const TimelineSection = styled.div`
 
 
 
-const index = () => {
+const Education = () => {
+    const { language } = useLanguage();
+    const t = translations[language].education;
+    
     return (
         <Container id="education">
             <Wrapper>
-                <Title>Certificações</Title>
+                <Title>{t.title}</Title>
                 <Desc>
-                Tenho o prazer de compartilhar com você minha trajetória educacional e profissional. Abaixo, você encontrará uma lista detalhada dos cursos que concluí e das formações que adquiri ao longo dos anos. Cada curso e formação representou uma oportunidade valiosa de aprendizado e crescimento, contribuindo significativamente para minha carreira e desenvolvimento pessoal.
+                {t.description}
                 </Desc>
                 <TimelineSection>
                     <Timeline>
@@ -106,4 +114,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Education
