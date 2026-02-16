@@ -370,6 +370,26 @@ export const projects = [
       },
     ],
   },
+   {
+    id: 6,
+    title: "",
+    date: "",
+    description:
+      "",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolRZpzWw5Y5bj02B-B5cS0SxdD73W-Uage3E80SZAXpRseEXOI594e30Y5u1a2U0Vidw&usqp=CAU",
+    tags: [""],
+    category: "",
+    github: "",
+    webapp: "",
+    member: [
+      {
+        name: "",
+        linkedin: "",
+        github: "",
+      },
+    ],
+  },
 ];
 
 export const TimeLineData = [
