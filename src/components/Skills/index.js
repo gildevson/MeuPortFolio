@@ -73,11 +73,11 @@ const Skill = styled.div`
   padding: 18px 36px;
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 10px 16px;
   }
   @media (max-width: 500px) {
     max-width: 330px;
-    padding: 10px 36px;
+    padding: 10px 12px;
   }
 `
 
@@ -91,10 +91,13 @@ const SkillTitle = styled.h2`
 
 const SkillList = styled.div`
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
+  @media (max-width: 500px) {
+    gap: 8px;
+  }
 `
 
 const SkillItem = styled.div`
@@ -109,12 +112,14 @@ const SkillItem = styled.div`
   justify-content: center;
   gap: 8px;
   @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
+    font-size: 13px;
+    padding: 7px 10px;
+    gap: 6px;
   }
   @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
+    font-size: 12px;
+    padding: 6px 8px;
+    gap: 5px;
   }
 `
 

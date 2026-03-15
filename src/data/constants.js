@@ -3,6 +3,7 @@
 
 import pucminasImg from '../images/pucminas.jpg';
 import bellinatiImg from '../images/images.png';
+import rocketseatImg from '../images/rockeseat.png';
 
 export const Bio = {
   name: "Gilson Fonseca",
@@ -24,29 +25,32 @@ export const skills = [
     title: "Front-end",
     skills: [
       {
-        name: "React Js",
-        image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+        name: "Angular",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg",
       },
-
+      {
+        name: "TypeScript",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "React",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+      },
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
       {
         name: "CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
       },
       {
         name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       },
       {
         name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+        image: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
     ],
   },
@@ -54,57 +58,54 @@ export const skills = [
     title: "Backend",
     skills: [
       {
+        name: "C#",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+      },
+      {
+        name: ".NET",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg",
+      },
+      {
+        name: "SQL Server",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg",
+      },
+      {
+        name: "PostgreSQL",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+      },
+      {
         name: "Node Js",
         image: "https://nodejs.org/static/images/logo.svg",
       },
       {
-        name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      },
-      {
-        name: "SQL Server",
-        image:
-          "https://5.imimg.com/data5/SELLER/Default/2023/10/350044474/GS/MO/NG/198979354/microsoft-sql-server.png",
-      },
-      {
-        name: "MongoDB",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
         name: "Java",
-        image:
-          "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000",
+        image: "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000",
       },
-
     ],
   },
   {
     title: "Others",
     skills: [
       {
-        "name": "Eclipse",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg"
+        name: "Crystal Reports",
+        image: "https://img.icons8.com/color/96/crystal-reports.png",
       },
       {
-        "name": "VS Code",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519"
+        name: "VS Code",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
       },
       {
-        "name": "GitHub",
-        "image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        name: "Visual Studio",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg",
       },
       {
-        "name": "Netlify",
-        "image": "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png"
+        name: "GitHub",
+        image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
       {
-        "name": "Crystal Reports",
-        "image": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.caman.au/wp-content/uploads/2018/01/crystal_reports_hosting.png"
-      }
-
-
+        name: "Netlify",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.svg",
+      },
     ],
   },
 ];
@@ -185,7 +186,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://yt3.googleusercontent.com/m2DDh77RZbGfQrGpDKNIaFybLAy9jP8foYPXhlQMNxieFzEEckffauYRlWhFLL52j5TyTs8RcA=s160-c-k-c0x00ffffff-no-rj",
+    img: rocketseatImg,
     school: "Rocketseat",
     date: "Julho 2025 - Agosto 2025",
     desc: "Durante o minicurso, desenvolvi uma API completa para gerenciamento de tarefas (To-Do List) utilizando Java e Spring Boot. Aprendi a criar rotas HTTP, validar parâmetros, realizar integração com banco de dados e implementar autenticação segura com JWT utilizando Spring Security. Esse projeto me proporcionou uma base prática sólida para o desenvolvimento de APIs com Spring Boot, permitindo criar aplicações do zero com boas práticas de programação e segurança.",

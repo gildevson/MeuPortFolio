@@ -54,43 +54,45 @@ const Desc = styled.div`
 `;
 
 const ContactInfo = styled.div`
-  margin-top: 20px;
-  text-align: center;
-`;
-
-const ContactTitle = styled.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-`;
-
-const ContactText = styled.p`
+  margin-top: 28px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 16px;
   justify-content: center;
-  margin: 5px 0;
-`;
-
-const ContactLink = styled.a`
-  color: grey;
-  text-decoration: underline;
-  &:hover {
-    text-decoration: none;
+  flex-wrap: wrap;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-  margin-left: 8px;
 `;
 
-const SocialMediaIcon = styled.a`
+const ContactButton = styled.a`
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: 1px solid ${({ theme }) => theme.text_primary + 40};
+  background: ${({ theme }) => theme.card};
   color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(23, 92, 230, 0.10) 0px 4px 16px;
+  min-width: 220px;
+  justify-content: center;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    border-color: ${({ theme }) => theme.primary};
+    box-shadow: rgba(133, 76, 230, 0.25) 0px 4px 24px;
+    transform: translateY(-2px);
   }
-  margin-right: 8px;
+  @media (max-width: 500px) {
+    width: 260px;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
 `;
 
 const Contact = () => {
@@ -100,19 +102,14 @@ const Contact = () => {
         <Title>Contatos</Title>
         <Desc>Para qualquer oportunidade de contato, as principais opções estão listadas abaixo. Basta clicar no link.</Desc>
         <ContactInfo>
-          <ContactTitle></ContactTitle>
-          <ContactText>
-            <SocialMediaIcon href="mailto:gildevson@gmail.com" target="_blank">
-              <EmailIcon />
-            </SocialMediaIcon>
-            <ContactLink href="mailto:gildevson@gmail.com">gildevson@gmail.com</ContactLink>
-          </ContactText>
-          <ContactText>
-            <SocialMediaIcon href="https://www.linkedin.com/in/gilson-fonseca-78b6b4138/" target="_blank">
-              <LinkedInIcon />
-            </SocialMediaIcon>
-            <ContactLink href="https://www.linkedin.com/in/gilson-fonseca-78b6b4138/">Linkedin</ContactLink>
-          </ContactText>
+          <ContactButton href="mailto:gildevson@gmail.com" target="_blank">
+            <EmailIcon style={{ fontSize: '22px', color: '#854CE6' }} />
+            gildevson@gmail.com
+          </ContactButton>
+          <ContactButton href="https://www.linkedin.com/in/gilson-fonseca-78b6b4138/" target="_blank">
+            <LinkedInIcon style={{ fontSize: '22px', color: '#0A66C2' }} />
+            LinkedIn
+          </ContactButton>
         </ContactInfo>
       </Wrapper>
     </Container>
