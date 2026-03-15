@@ -77,7 +77,7 @@ const Top = styled.div`
 
 const Image = styled.img`
     height: 50px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 10px;
     margin-top: 4px;
     @media only screen and (max-width: 768px){

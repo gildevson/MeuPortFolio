@@ -1,6 +1,8 @@
 
 
 
+import pucminasImg from '../images/pucminas.jpg';
+
 export const Bio = {
   name: "Gilson Fonseca",
   roles: [
@@ -109,7 +111,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C4D0BAQGMvR5WYcTJMw/company-logo_200_200/0/1637175308571/finanbluedigital_logo?e=2147483647&v=beta&t=3SkhLn63DzYkUhC3LBh7JxIBhDm4Lo89nQ6_Dn9PCJk",
+    img: `${process.env.PUBLIC_URL}/images/logo_finanblue.png`,
     role: "Analista de Sistemas Pleno",
     company: "Finanblue",
     date: "Julho 2024 - Atualmente",
@@ -126,7 +128,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C4D0BAQGMvR5WYcTJMw/company-logo_200_200/0/1637175308571/finanbluedigital_logo?e=2147483647&v=beta&t=3SkhLn63DzYkUhC3LBh7JxIBhDm4Lo89nQ6_Dn9PCJk",
+    img: `${process.env.PUBLIC_URL}/images/logo_finanblue.png`,
     role: "Analista de Sistemas Jr",
     company: "Finanblue",
     date: "Julho 2022 -  Junho 2024",
@@ -166,7 +168,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://github.com/gildevson/MeuPortFolio/blob/main/src/images/pucminas.jpg?raw=true",
+    img: pucminasImg,
     school: "PUC MINAS",
     date: "Janeiro 2025 - Setembro 2026",
     desc: "Cursando",
@@ -246,7 +248,7 @@ export const projects = [
     description:
       "Como profissional da área de tecnologia, compreendo a complexidade e a diversidade de informações que lidamos no dia a dia. Os sistemas de gestão financeira envolvem remessas, retornos, notificações e restrições, com cada banco possuindo seus próprios layouts específicos para esses dados. Diante desse cenário, decidi criar um portal de consulta de ocorrências e motivos, com o objetivo de aprimorar e facilitar o processo de registro de informações em nossos outros softwares. Meu objetivo foi aplicar meus conhecimentos na área de tecnologia para desenvolver uma ferramenta que atendesse às necessidades do nosso setor e contribuísse significativamente para a empresa. Observação: intuito desse sistema era não deixar responsivo por conta que esse sistema depende de outro sistema.",
     image:
-      "https://github.com/gildevson/Bancos/blob/main/icon/Screenshot_9.png?raw=true",
+      "https://raw.githubusercontent.com/gildevson/Bancos/main/icon/Screenshot_9.png",
     tags: [
       "JavaScript",
       "Node JS",
@@ -272,7 +274,7 @@ export const projects = [
     description:
       "Projeto JP é uma publicação educativa dedicada a fornecer informações relevantes e educativas aos leitores, focando na história do C.E. Papa João Paulo I. Seu principal propósito é promover aprendizado e conhecimento em diversas áreas, abordando temas de interesse educacional e cultural. O blog busca oferecer conteúdo que estimule o aprendizado e enriqueça a compreensão dos leitores, destacando a história e a importância do C.E. Papa João Paulo I como parte integrante desse processo educacional.",
     image:
-      "https://github.com/gildevson/SiteJornal/blob/main/img/ImagemScholl.png?raw=true",
+      "https://raw.githubusercontent.com/gildevson/SiteJornal/main/img/ImagemScholl.png",
     tags: ["JavaScript", "Bootstrap", "CSS", "HTML"],
     category: "web app",
     github: "https://github.com/gildevson/SiteJornal",
@@ -318,7 +320,7 @@ export const projects = [
     tags: ["NodeJs", "ReactJs", "CSS"],
     category: "web app",
     github: "https://github.com/gildevson/ONG",
-    webapp: "https://influenciando-geracoes.netlify.app",
+    webapp: "https://www.xn--influenciandogeraes-myb80a.com/",
     member: [
       {
         name: "Gilson",
@@ -335,7 +337,7 @@ export const projects = [
   description:
     "Sistema desenvolvido com foco na centralização, padronização e consulta de ocorrências bancárias. O portal foi criado para auxiliar usuários na identificação do significado das ocorrências, além de centralizar layouts bancários, ordens e informações operacionais em um único ambiente. O projeto foi construído utilizando Angular no frontend e ASP.NET Core com C# no backend, integrados a um banco de dados PostgreSQL. A aplicação permite o cadastro, edição e validação de ocorrências e seus respectivos motivos, organizados por instituição bancária, simulando um cenário real de uso em ambientes financeiros e operacionais. Atualmente, mais de 15 pessoas já utilizam o portal para auxiliar o setor de suporte da empresa onde atuo, tornando processos mais rápidos, organizados e confiáveis. Os validadores continuam sendo alimentados e aprimorados continuamente conforme novas necessidades surgem, e o portal também conta com uma área de notícias para compartilhamento de informações relevantes. Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura, separação de responsabilidades, autenticação segura via JWT e acesso performático ao banco de dados por meio de micro-ORM, resultando em uma solução escalável, organizada e preparada para evolução contínua.",
   image:
-    "https://github.com/gildevson/BancoOcorrenciasAngular/blob/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png?raw=true",
+    "https://raw.githubusercontent.com/gildevson/BancoOcorrenciasAngular/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png",
   tags: ["Angular", "TypeScript", "C#", ".NET", "PostgreSQL"],
   category: "web app",
   github: "https://github.com/gildevson",
@@ -354,13 +356,13 @@ export const projects = [
   title: "Portal de Treinamentos Finanblue",
   date: "Janeiro 2026",
   description:
-    "Sistema de treinamentos desenvolvido para a Finanblue com o objetivo de centralizar o conhecimento sobre os produtos e sistemas da empresa em um único ambiente organizado e acessível. A plataforma foi criada para auxiliar na integração de novos colaboradores, permitindo que entendam rapidamente quem somos, o que fazemos, como funcionam nossos sistemas e como é a nossa gestão. O sistema conta com funcionalidades de login, gerenciamento de aulas, provas e trilhas de treinamento, permitindo que cada assunto específico fique estruturado em seu próprio módulo. A aplicação foi construída com Angular no frontend, TypeScript no backend e PostgreSQL como banco de dados, oferecendo uma interface moderna, intuitiva e preparada para expansão conforme novas demandas surgirem.",
+    "Sistema de treinamentos desenvolvido para a Finanblue com o objetivo de centralizar o conhecimento sobre os produtos e sistemas da empresa em um único ambiente organizado e acessível. A plataforma foi criada para auxiliar na integração de novos colaboradores, permitindo que entendam rapidamente quem somos, o que fazemos, como funcionam nossos sistemas e como é a nossa gestão. Atualmente, o sistema já está em uso por mais de 30 colaboradores internos e também é utilizado por clientes, que acessam o mesmo ambiente para capacitação — contribuindo diretamente para a geração de receita na empresa. Como a Finanblue atua no nicho de securitização e possui produtos/sistemas com integrações entre si, a plataforma facilita o entendimento do negócio, acelera o aprendizado sobre processos e regras, reduz dúvidas operacionais e melhora a eficiência do time e do atendimento, impactando positivamente os resultados. O sistema conta com funcionalidades de login, gerenciamento de aulas, provas e trilhas de treinamento. A aplicação foi construída com Angular no frontend, TypeScript no backend e PostgreSQL como banco de dados, oferecendo uma interface moderna e intuitiva.",
   images: [
-    "/images/treinamentos/GerenciadorDeProvas.png",
-    "/images/treinamentos/GerenciadorDeTreinamentos.png",
-    "/images/treinamentos/ListaDeAulas.png",
-    "/images/treinamentos/SistemaDeTreinamentos.png",
-    "/images/treinamentos/CelularFinanblue.png"
+    `${process.env.PUBLIC_URL}/images/treinamentos/GerenciadorDeProvas.png`,
+    `${process.env.PUBLIC_URL}/images/treinamentos/GerenciadorDeTreinamentos.png`,
+    `${process.env.PUBLIC_URL}/images/treinamentos/ListaDeAulas.png`,
+    `${process.env.PUBLIC_URL}/images/treinamentos/SistemaDeTreinamentos.png`,
+    `${process.env.PUBLIC_URL}/images/treinamentos/CelularFinanblue.png`
   ],
   tags: ["Angular", "TypeScript", "PostgreSQL", "HTML", "CSS"],
   category: "web app",
