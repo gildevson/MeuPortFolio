@@ -2,6 +2,7 @@
 
 
 import pucminasImg from '../images/pucminas.jpg';
+import bellinatiImg from '../images/images.png';
 
 export const Bio = {
   name: "Gilson Fonseca",
@@ -156,7 +157,7 @@ export const experiences = [
   },
   {
     id: 3,
-    img: "https://media.licdn.com/dms/image/D4D22AQH-g3-jnFQpVw/feedshare-shrink_800/0/1702586068087?e=2147483647&v=beta&t=vw6sxnej77m5AUIFjV0aHF0gMVC44JUz7cLELmLbTdM",
+    img: bellinatiImg,
     role: "Negociador de Titulo de Crédito",
     company: "bellinati perez",
     date: "June 2022 - July 2023",
@@ -367,7 +368,7 @@ export const projects = [
   tags: ["Angular", "TypeScript", "PostgreSQL", "HTML", "CSS"],
   category: "web app",
   github: "",
-  webapp: "",
+  webapp: "https://finanbluetreinamentos.com/",
   member: [
     {
       name: "Gilson Fonseca",
