@@ -45,7 +45,7 @@ export const translations = {
         },
         // Bio data
         bio: {
-            description: "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas e atualmente cursando uma pós-graduação em Engenharia de Software. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Estou sempre em busca de atualização e aprimoramento para oferecer soluções inovadoras.Explore meu portfólio e sinta-se à vontade para entrar em contato caso tenha dúvidas ou interesse em oportunidades. Estou sempre aberto a novos desafios!"
+            description: "Desenvolvedor Full Stack com foco em .NET, Angular e SQL Server — construindo sistemas reais que já estão em produção e impactando pessoas. Graduado em Análise e Desenvolvimento de Sistemas, pós-graduando em Engenharia de Software e com mais de 2 anos de experiência na Finanblue, onde desenvolvo e mantenho portais utilizados diariamente por equipes internas e clientes. Transformo problemas complexos em soluções simples, eficientes e escaláveis."
         },
         // Experiences data
         experiencesData: [
@@ -202,7 +202,7 @@ export const translations = {
         },
         // Bio data
         bio: {
-            description: "I am a technology-passionate professional, graduated in Systems Analysis and Development, and currently pursuing a postgraduate degree in Software Engineering. Here, you will find my projects, favorite technologies, academic background, and certifications. I am always seeking to update and improve myself to deliver innovative solutions. Explore my portfolio and feel free to reach out if you have questions or interest in opportunities. I am always open to new challenges!"
+            description: "Full Stack Developer focused on .NET, Angular, and SQL Server — building real systems already in production and making an impact. Graduated in Systems Analysis and Development, pursuing a postgraduate degree in Software Engineering, with 2+ years of experience at Finanblue developing and maintaining portals used daily by internal teams and clients. I turn complex problems into simple, efficient, and scalable solutions."
         },
         // Experiences data
         experiencesData: [

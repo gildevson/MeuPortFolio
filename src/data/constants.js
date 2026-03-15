@@ -11,7 +11,7 @@ export const Bio = {
     "",
   ],
   description:
-    "Sou um profissional apaixonado por tecnologia, graduado em Análise e Desenvolvimento de Sistemas e atualmente cursando uma pós-graduação em Engenharia de Software. Aqui, você encontrará meus projetos, tecnologias favoritas, formação acadêmica e certificações. Estou sempre em busca de atualização e aprimoramento para oferecer soluções inovadoras.Explore meu portfólio e sinta-se à vontade para entrar em contato caso tenha dúvidas ou interesse em oportunidades. Estou sempre aberto a novos desafios!",
+    "Desenvolvedor Full Stack com foco em .NET, Angular e SQL Server — construindo sistemas reais que já estão em produção e impactando pessoas. Graduado em Análise e Desenvolvimento de Sistemas, pós-graduando em Engenharia de Software e com mais de 2 anos de experiência na Finanblue, onde desenvolvo e mantenho portais utilizados diariamente por equipes internas e clientes. Transformo problemas complexos em soluções simples, eficientes e escaláveis.",
   github: "https://github.com/gildevson",
   resume: "",
 

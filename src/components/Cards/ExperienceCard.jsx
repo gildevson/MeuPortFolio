@@ -65,8 +65,8 @@ const Card = styled.div`
 
     }
 
-    border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border: 0.1px solid #854CE6;
+    box-shadow: rgba(133, 76, 230, 0.15) 0px 4px 24px;
 `
 
 const Top = styled.div`
