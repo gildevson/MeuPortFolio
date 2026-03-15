@@ -339,7 +339,7 @@ export const projects = [
     "Sistema desenvolvido com foco na centralização, padronização e consulta de ocorrências bancárias. O portal foi criado para auxiliar usuários na identificação do significado das ocorrências, além de centralizar layouts bancários, ordens e informações operacionais em um único ambiente. O projeto foi construído utilizando Angular no frontend e ASP.NET Core com C# no backend, integrados a um banco de dados PostgreSQL. A aplicação permite o cadastro, edição e validação de ocorrências e seus respectivos motivos, organizados por instituição bancária, simulando um cenário real de uso em ambientes financeiros e operacionais. Atualmente, mais de 15 pessoas já utilizam o portal para auxiliar o setor de suporte da empresa onde atuo, tornando processos mais rápidos, organizados e confiáveis. Os validadores continuam sendo alimentados e aprimorados continuamente conforme novas necessidades surgem, e o portal também conta com uma área de notícias para compartilhamento de informações relevantes. Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura, separação de responsabilidades, autenticação segura via JWT e acesso performático ao banco de dados por meio de micro-ORM, resultando em uma solução escalável, organizada e preparada para evolução contínua.",
   image:
     "https://raw.githubusercontent.com/gildevson/BancoOcorrenciasAngular/main/src/assets/logo/IMAGEMBANCOOCORRENCIAS.png",
-  tags: ["Angular", "TypeScript", "C#", ".NET", "PostgreSQL"],
+  tags: ["Angular", "TypeScript", "C#", ".NET", "Dapper", "PostgreSQL"],
   category: "web app",
   github: "https://github.com/gildevson",
   webapp: "https://bancosocorrencia.com",
@@ -365,7 +365,11 @@ export const projects = [
     `${process.env.PUBLIC_URL}/images/treinamentos/SistemaDeTreinamentos.png`,
     `${process.env.PUBLIC_URL}/images/treinamentos/CelularFinanblue.png`
   ],
-  tags: ["Angular", "TypeScript", "PostgreSQL", "HTML", "CSS"],
+  tags: [
+    "NestJS", "TypeScript", "Prisma ORM", "PostgreSQL", "JWT", "Passport",
+    "PDF-lib", "Sharp", "AWS S3", "Swagger", "Render",
+    "Angular 17", "jsPDF", "html2canvas", "RxJS", "SCSS", "Vercel"
+  ],
   category: "web app",
   github: "",
   webapp: "https://finanbluetreinamentos.com/",
